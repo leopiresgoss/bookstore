@@ -1,5 +1,9 @@
+import BookList from '../components/BookList';
+
 const Bookstore = () => (
-  <div>Bookstore page</div>
+  <div className="bookstore">
+    <BookList />
+  </div>
 );
 
 export default Bookstore;
