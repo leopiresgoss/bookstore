@@ -17,7 +17,7 @@ To get a local copy up and running follow these simple example steps.
 `git@github.com:leopiresgoss/math-magicians.git`
 
 2. Change the directory to the leaderboard: <br>
-`cd math-magicians`
+`cd bookstore`
 
 3. Install the project dependencies by running: <br>
 `npm install`
