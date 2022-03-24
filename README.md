@@ -13,8 +13,7 @@
 
 To get a local copy up and running follow these simple example steps. 
 
-1. Clone the project directory in your terminal by running this command:
-  <br>
+1. Clone the project directory in your terminal by running this command: <br>
 `git@github.com:leopiresgoss/math-magicians.git`
 
 2. Change the directory to the leaderboard: <br>
