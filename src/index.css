@@ -1,5 +1,12 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  border: 0;
+  color: black;
+}
+
+body {
+  min-height: 100vh;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -16,12 +23,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
 }
