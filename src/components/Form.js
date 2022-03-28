@@ -25,8 +25,8 @@ const Form = () => {
   return (
     <form method="POST" action="/" className="add" onSubmit={(e) => submitForm(e)}>
       <h3>ADD NEW BOOK</h3>
-      <input type="text" name="title" id="title" placeholder="Book title" />
-      <input type="text" name="author" id="author" placeholder="Author" />
+      <input type="text" name="title" id="title" placeholder="Book title" required />
+      <input type="text" name="author" id="author" placeholder="Author" required />
       <button type="submit">Add Book</button>
     </form>
   );
