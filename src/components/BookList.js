@@ -1,14 +1,10 @@
+import { useSelector } from 'react-redux';
 import Book from './Book';
 import Form from './Form';
 
 const BookList = () => {
-  const bookList = [
-    {
-      id: 0,
-      title: 'Book example',
-      author: 'Ronald McDonald',
-    },
-  ];
+  const bookList = useSelector((state) => state.books);
+
   return (
     <>
       <ul className="book-list">
