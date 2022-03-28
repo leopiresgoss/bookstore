@@ -19,13 +19,6 @@ export default function reducer(state = [], action) {
 }
 
 // Action creators
-/*
-  book = {
-    id:
-    title:
-    author:
-  }
-*/
 export function addBookAction(book) {
   nextId += 1;
 
