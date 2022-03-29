@@ -1,5 +1,3 @@
-let nextId = 0;
-
 // Actions
 const ADD_BOOK = 'ADD_BOOK';
 const REMOVE_BOOK = 'REMOVE_BOOK';
@@ -10,7 +8,7 @@ export default function reducer(state = [], action) {
     case ADD_BOOK:
       return [
         ...state,
-        action.book,
+        action.payload,
       ];
     case REMOVE_BOOK:
       return state.filter((book) => book.id !== action.id);
@@ -20,13 +18,10 @@ export default function reducer(state = [], action) {
 
 // Action creators
 export function addBookAction(book) {
-  nextId += 1;
-
   return {
     type: ADD_BOOK,
     payload: {
       ...book,
-      id: nextId,
     },
   };
 }

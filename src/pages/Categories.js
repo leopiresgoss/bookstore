@@ -1,6 +1,8 @@
+import StatusButton from '../components/StatusButton';
+
 const Categories = () => (
   <div className="categories">
-    <button type="button" className="check-status">Check Status</button>
+    <StatusButton />
   </div>
 );
 
