@@ -35,12 +35,14 @@ export const addBookAction = (book) => async (dispatch) => {
   });
 };
 
-export function removeBookAction(id) {
-  return {
+export const removeBookAction = (id) => async (dispatch) => {
+  await BookstoreService.removeBook(id);
+
+  dispatch({
     type: REMOVE_BOOK,
     id,
-  };
-}
+  });
+};
 
 export const getBookList = () => async (dispatch) => {
   const bookList = await BookstoreService.getBooks();

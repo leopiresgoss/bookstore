@@ -8,7 +8,7 @@ const Book = (props) => {
 
   const removeBook = (e) => {
     const btn = e.currentTarget;
-    const id = Number(btn.getAttribute('data-id'));
+    const id = btn.getAttribute('data-id');
 
     dispatch(removeBookAction(id));
   };
