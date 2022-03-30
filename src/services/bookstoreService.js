@@ -4,7 +4,7 @@ const API_LINK = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/boo
 const getBooks = async () => {
   const reqURL = `${API_LINK}/books`;
   const res = await fetch(reqURL);
-  return res.json().catch(() => false);
+  return res.json();
 };
 
 // add books to api
