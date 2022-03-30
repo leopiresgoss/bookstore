@@ -1,3 +1,10 @@
+:root {
+  --azure: #0290ff;
+  --black: #121212;
+  --gray: #e8e8e8;
+
+}
+
 nav,
 .bookstore,
 .categories {
@@ -5,6 +12,15 @@ nav,
 }
 
 /* navbar */
+nav {
+  border-bottom: 1px solid var(--gray);
+  background-color: #fff;
+}
+
+h1 {
+  color: var(--azure);
+}
+
 .nav-links {
   display: flex;
   flex-wrap: wrap;
@@ -17,4 +33,8 @@ nav,
   flex-wrap: wrap;
   column-gap: 24px;
   align-items: center;
+}
+
+.link-categories {
+  opacity: 0.5;
 }

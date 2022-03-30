@@ -16,10 +16,10 @@ const Navbar = () => {
   return (
     <nav>
       <ul className="nav-links">
-        <h1 className="logo">Bookstore</h1>
+        <h1 className="logo">Bookstore CMS</h1>
         <ul className="links">
           {links.map((link) => (
-            <li key={link.id}>
+            <li key={link.id} className={`link-${link.title.toLowerCase()}`}>
               <Link to={link.path}>{link.title}</Link>
             </li>
           ))}
