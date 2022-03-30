@@ -2,7 +2,7 @@
 
 # Bookstore
 
-> Bookstore is a website for all book lovers. You can manange your book list by adding and removing books.
+> Bookstore is a website for all book lovers. You can manange your book list by adding and removing books. All data is preserved thanks to the external [Bookstore API](https://www.notion.so/Bookstore-API-51ea269061f849118c65c0a53e88a739).
 
 ## Built With
 
@@ -26,6 +26,8 @@ To get a local copy up and running follow these simple example steps.
 `npm start`
 
 5. It will open the live server in your browser at this port http://localhost:3000/
+
+6. OBS.: It was used the Bookstore API to store and manage the data, for more information, access this [link](https://www.notion.so/Bookstore-API-51ea269061f849118c65c0a53e88a739)
 
 ## 👤 Author
 
