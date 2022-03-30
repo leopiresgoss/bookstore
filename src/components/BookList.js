@@ -16,7 +16,7 @@ const BookList = () => {
     <>
       <ul className="book-list">
         {bookList.map((bookItem) => (
-          <Book key={bookItem.id} bookItem={bookItem} />
+          <Book key={bookItem.item_id} bookItem={bookItem} />
         ))}
       </ul>
       <Form />

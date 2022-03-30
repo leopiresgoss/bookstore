@@ -20,7 +20,7 @@ const Form = () => {
 
     const bookObj = {
       ...book,
-      id: Date.now(),
+      item_id: Date.now().toString(),
     };
 
     dispatch(addBookAction(bookObj));

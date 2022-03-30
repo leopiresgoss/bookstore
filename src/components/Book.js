@@ -20,7 +20,7 @@ const Book = (props) => {
         <p className="author">{bookItem.author}</p>
       </div>
       <div className="buttons">
-        <button type="button" className="remove-btn" data-id={bookItem.id} onClick={removeBook}>
+        <button type="button" className="remove-btn" data-id={bookItem.item_id} onClick={removeBook}>
           Remove
         </button>
       </div>
@@ -30,7 +30,7 @@ const Book = (props) => {
 
 Book.propTypes = {
   bookItem: PropTypes.exact({
-    id: PropTypes.number,
+    item_id: PropTypes.string,
     title: PropTypes.string,
     author: PropTypes.string,
   }).isRequired,

@@ -1,4 +1,4 @@
-import bookstoreServices from '../../services/bookstoreService';
+import BookstoreService from '../../services/bookstoreService';
 
 // Actions
 const GET_BOOKLIST = 'GET_BOOKLIST';
@@ -16,20 +16,24 @@ export default function reducer(state = [], action) {
         action.payload,
       ];
     case REMOVE_BOOK:
-      return state.filter((book) => book.id !== action.id);
+      return state.filter((book) => book.item_id !== action.id);
     default: return state;
   }
 }
 
 // Action creators
-export function addBookAction(book) {
-  return {
+export const addBookAction = (book) => async (dispatch) => {
+  await BookstoreService.addBook({
+    ...book,
+    category: '',
+  });
+  dispatch({
     type: ADD_BOOK,
     payload: {
       ...book,
     },
-  };
-}
+  });
+};
 
 export function removeBookAction(id) {
   return {
@@ -39,12 +43,12 @@ export function removeBookAction(id) {
 }
 
 export const getBookList = () => async (dispatch) => {
-  const bookList = await bookstoreServices.getBooks();
+  const bookList = await BookstoreService.getBooks();
 
   const payload = Object.keys(bookList).map((key) => {
-    const { title, author } = bookList[key];
+    const { title, author } = bookList[key][0];
     return {
-      id: key,
+      item_id: key,
       title,
       author,
     };
