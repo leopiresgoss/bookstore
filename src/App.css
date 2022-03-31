@@ -19,6 +19,9 @@ nav {
 
 h1 {
   color: var(--azure);
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.875rem;
+  font-weight: bold;
 }
 
 .nav-links {
@@ -55,12 +58,20 @@ h1 {
   border: solid 1px var(--grey);
 }
 
+.title {
+  font-size: 1.375rem;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  font-family: 'Roboto', sans-serif;
+}
+
 .author {
   margin: 0.25rem 0 0;
 }
 
 .author,
 .remove-btn {
+  font-family: 'Roboto', sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   color: var(--blue);
@@ -110,6 +121,7 @@ h1 {
   background-color: var(--azure);
   width: 11.5rem;
   height: 2.813rem;
+  font-family: 'Roboto', sans-serif;
   color: #fff;
   letter-spacing: 0.5px;
   text-align: center;

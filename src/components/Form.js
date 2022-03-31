@@ -38,7 +38,7 @@ const Form = () => {
       <fieldset>
         <input type="text" name="title" id="title" value={book.title} placeholder="Book title" onChange={handleChange} required />
         <input type="text" name="author" id="author" value={book.author} placeholder="Author" onChange={handleChange} required />
-        <button type="submit">Add Book</button>
+        <button type="submit">ADD BOOK</button>
       </fieldset>
     </form>
   );
