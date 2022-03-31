@@ -38,8 +38,12 @@ h1 {
   align-items: center;
 }
 
-.link-categories {
+.links a {
   opacity: 0.5;
+}
+
+.links a.active {
+  opacity: 1;
 }
 
 /* booklist */

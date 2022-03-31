@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const links = [
@@ -20,7 +20,7 @@ const Navbar = () => {
         <ul className="links">
           {links.map((link) => (
             <li key={link.id} className={`link-${link.title.toLowerCase()}`}>
-              <Link to={link.path}>{link.title}</Link>
+              <NavLink to={link.path}>{link.title}</NavLink>
             </li>
           ))}
         </ul>
