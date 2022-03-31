@@ -58,6 +58,13 @@ h1 {
   border: solid 1px var(--grey);
 }
 
+.category {
+  opacity: 0.5;
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
 .title {
   font-size: 1.375rem;
   font-weight: 700;

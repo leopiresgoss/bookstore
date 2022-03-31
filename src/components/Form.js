@@ -20,6 +20,7 @@ const Form = () => {
 
     const bookObj = {
       ...book,
+      category: 'Action',
       item_id: Date.now().toString(),
     };
 

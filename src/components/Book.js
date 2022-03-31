@@ -16,6 +16,7 @@ const Book = (props) => {
   return (
     <li className="book">
       <div className="details">
+        <p className="category">{bookItem.category}</p>
         <h3 className="title">{bookItem.title}</h3>
         <p className="author">{bookItem.author}</p>
       </div>
@@ -31,6 +32,7 @@ const Book = (props) => {
 Book.propTypes = {
   bookItem: PropTypes.exact({
     item_id: PropTypes.string,
+    category: PropTypes.string,
     title: PropTypes.string,
     author: PropTypes.string,
   }).isRequired,

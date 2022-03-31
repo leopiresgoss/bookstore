@@ -23,10 +23,7 @@ export default function reducer(state = [], action) {
 
 // Action creators
 export const addBookAction = (book) => async (dispatch) => {
-  await BookstoreService.addBook({
-    ...book,
-    category: '',
-  });
+  await BookstoreService.addBook(book);
   dispatch({
     type: ADD_BOOK,
     payload: {
@@ -48,11 +45,12 @@ export const getBookList = () => async (dispatch) => {
   const bookList = await BookstoreService.getBooks();
 
   const payload = Object.keys(bookList).map((key) => {
-    const { title, author } = bookList[key][0];
+    const { title, author, category } = bookList[key][0];
     return {
       item_id: key,
       title,
       author,
+      category,
     };
   });
 
