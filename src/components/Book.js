@@ -33,8 +33,14 @@ const Book = (props) => {
         <h3 className="title">{bookItem.title}</h3>
         <p className="author">{bookItem.author}</p>
         <div className="buttons">
-          <button type="button" className="remove-btn" data-id={bookItem.item_id} onClick={removeBook}>
+          <button type="button" className="comment">
+            Comments
+          </button>
+          <button type="button" className="remove" data-id={bookItem.item_id} onClick={removeBook}>
             Remove
+          </button>
+          <button type="button" className="edit">
+            Edit
           </button>
         </div>
       </div>

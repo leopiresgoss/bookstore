@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   border: 0;
-  color: black;
 }
 
 body {
@@ -26,6 +25,7 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 li {
@@ -35,8 +35,4 @@ li {
 button {
   background: none;
   cursor: pointer;
-}
-
-button:hover {
-  font-weight: bolder;
 }

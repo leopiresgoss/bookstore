@@ -1,4 +1,6 @@
 import { NavLink } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
   const links = [
@@ -24,6 +26,9 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+        <div className="login">
+          <FontAwesomeIcon icon={faUser} />
+        </div>
       </ul>
     </nav>
   );
