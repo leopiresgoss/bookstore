@@ -1,0 +1,23 @@
+/* progress circle bar */
+
+/* adapted from https://www.youtube.com/watch?v=YDgw6HjMCoQ */
+
+.wrapper {
+  width: 60px;
+  height: 60px;
+  margin-right: 1rem;
+  background: #fefcff;
+  border-radius: 50%;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.wrapper::before {
+  content: '';
+  position: absolute;
+  height: 84%;
+  width: 84%;
+  border-radius: 50%;
+  background-color: #fff;
+}

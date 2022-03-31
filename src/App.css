@@ -55,11 +55,15 @@ h1 {
 }
 
 .book {
-  max-height: 10.625rem;
-  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  min-height: 10.625rem;
+  padding: 2rem 1.688rem;
   background-color: #fff;
   border-radius: 4px;
   border: solid 1px var(--grey);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .category {
@@ -90,6 +94,57 @@ h1 {
 
 .buttons {
   margin-top: 1.31rem;
+}
+
+.complete {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.complete::before {
+  display: inherit;
+  content: "";
+  height: 60%;
+  max-height: 4.12rem;
+  width: 0.125rem;
+  background-color: var(--gray);
+  margin: 0 3.6rem 0 5rem;
+  order: 1;
+}
+
+.progress {
+  order: 2;
+}
+
+.complete .details {
+  display: flex;
+  gap: 1rem;
+}
+
+.progress h6 {
+  font-family: 'Roboto', sans-serif;
+  opacity: 0.5;
+  font-weight: 300;
+  font-size: 0.813rem;
+  margin-bottom: 0.4rem;
+}
+
+.progress p {
+  margin-bottom: 1.48rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: -0.4px;
+}
+
+.percentage {
+  font-size: 2rem;
+}
+
+.completed {
+  opacity: 0.5;
+  font-size: 0.875rem;
 }
 
 /* form */
@@ -127,7 +182,8 @@ h1 {
 }
 
 .add button,
-.check-status {
+.check-status,
+.update-btn {
   padding: 0.801rem 1.188rem 0.886rem 1.375rem;
   border-radius: 3px;
   background-color: var(--azure);
@@ -141,6 +197,19 @@ h1 {
   font-weight: bold;
 }
 
-.add button:hover {
+.update-btn {
+  width: 11.5rem;
+  height: 2.063rem;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  font-size: 0.813rem;
+  font-weight: 300;
+}
+
+.add button:hover,
+.update-btn:hover {
   background-color: #0286ea;
+}
+
+.update-btn:hover {
+  font-weight: 300;
 }
