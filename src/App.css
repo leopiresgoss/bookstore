@@ -2,6 +2,7 @@
   --azure: #0290ff;
   --black: #121212;
   --gray: #e8e8e8;
+  --blue: #4386bf;
 
 }
 
@@ -37,4 +38,35 @@ h1 {
 
 .link-categories {
   opacity: 0.5;
+}
+
+/* booklist */
+.book-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.book {
+  max-height: 10.625rem;
+  padding: 2rem 9.188rem 1.625rem 1.688rem;
+  background-color: #fff;
+  border-radius: 4px;
+  border: solid 1px var(--grey);
+}
+
+.author {
+  margin: 0.25rem 0 0;
+}
+
+.author,
+.remove-btn {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: var(--blue);
+}
+
+.buttons {
+  margin-top: 1.31rem;
 }

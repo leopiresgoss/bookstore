@@ -33,5 +33,10 @@ li {
 }
 
 button {
+  background: none;
   cursor: pointer;
+}
+
+button:hover {
+  font-weight: bolder;
 }
