@@ -1,4 +1,6 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
   const links = [
@@ -16,14 +18,17 @@ const Navbar = () => {
   return (
     <nav>
       <ul className="nav-links">
-        <h1 className="logo">Bookstore</h1>
+        <h1 className="logo">Bookstore CMS</h1>
         <ul className="links">
           {links.map((link) => (
-            <li key={link.id}>
-              <Link to={link.path}>{link.title}</Link>
+            <li key={link.id} className={`link-${link.title.toLowerCase()}`}>
+              <NavLink to={link.path}>{link.title}</NavLink>
             </li>
           ))}
         </ul>
+        <div className="login">
+          <FontAwesomeIcon icon={faUser} />
+        </div>
       </ul>
     </nav>
   );

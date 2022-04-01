@@ -1,16 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Roboto:wght@300;400;500;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   border: 0;
-  color: black;
 }
 
 body {
+  background-color: rgba(0, 0, 0, 0.05);
   min-height: 100vh;
   font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
+    'Montserrat',
     'Roboto',
     'Oxygen',
     'Ubuntu',
@@ -25,6 +25,7 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 li {
@@ -32,5 +33,6 @@ li {
 }
 
 button {
+  background: none;
   cursor: pointer;
 }

@@ -20,6 +20,7 @@ const Form = () => {
 
     const bookObj = {
       ...book,
+      category: 'Action',
       item_id: Date.now().toString(),
     };
 
@@ -35,9 +36,11 @@ const Form = () => {
   return (
     <form method="POST" action="/" className="add" onSubmit={(e) => submitForm(e)}>
       <h3>ADD NEW BOOK</h3>
-      <input type="text" name="title" id="title" value={book.title} placeholder="Book title" onChange={handleChange} required />
-      <input type="text" name="author" id="author" value={book.author} placeholder="Author" onChange={handleChange} required />
-      <button type="submit">Add Book</button>
+      <fieldset>
+        <input type="text" name="title" id="title" value={book.title} placeholder="Book title" onChange={handleChange} required />
+        <input type="text" name="author" id="author" value={book.author} placeholder="Author" onChange={handleChange} required />
+        <button type="submit">ADD BOOK</button>
+      </fieldset>
     </form>
   );
 };

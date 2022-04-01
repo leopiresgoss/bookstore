@@ -4,6 +4,12 @@
 
 > Bookstore is a website for all book lovers. You can manange your book list by adding and removing books. All data is preserved thanks to the external [Bookstore API](https://www.notion.so/Bookstore-API-51ea269061f849118c65c0a53e88a739).
 
+<br>
+
+![desktop image](images/screenshot.png)
+
+<br>
+
 ## Built With
 
 - React/Redux
